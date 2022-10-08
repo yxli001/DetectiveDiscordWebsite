@@ -34,6 +34,7 @@ const Home = () => {
                             className={styles.input}
                             onChange={(e) => setTextInput(e.target.value)}
                             rows={3}
+                            placeholder="Enter some hate speech (or not)"
                         ></textarea>
                         <button
                             className={styles.button}
