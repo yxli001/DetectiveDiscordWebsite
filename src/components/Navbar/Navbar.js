@@ -9,21 +9,17 @@ const Navbar = () => {
                 className={`${styles.logo} animate__animated animate__fadeInLeft`}
             >
                 <a href="/" className={styles.logoLink}>
-                    <span className={styles.bold}>Detective</span>Discord
+                    <span className={styles.bold}>Exterma</span>Hate
                 </a>
             </div>
             <div
                 className={`${styles.links} animate__animated  animate__fadeInRight`}
             >
-                <a
-                    href="https://discord.com/oauth2/authorize?client_id=1028384869404913676&scope=bot&permissions=207878"
-                    target="_blank"
-                    className={styles.link}
-                >
-                    Add our bot
-                </a>
                 <a href="#scanner" className={styles.link}>
-                    Scanner
+                    Hate Scanner
+                </a>
+                <a href="#detective" className={styles.link}>
+                    Detective Discord
                 </a>
             </div>
         </div>

@@ -4,6 +4,7 @@ import styles from "./Home.module.css";
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
 import ContentScanner from "../ContentScanner/ContentScanner.page";
 import Navbar from "../../components/Navbar/Navbar";
+import DetectiveDiscord from "../DetectiveDiscord/DetectiveDiscord.page";
 
 const Home = () => {
     const [loading, setLoading] = useState(false);
@@ -149,6 +150,7 @@ const Home = () => {
                 </div>
             </div>
             <ContentScanner />
+            <DetectiveDiscord />
         </div>
     );
 };

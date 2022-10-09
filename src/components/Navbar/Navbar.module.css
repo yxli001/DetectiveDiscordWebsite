@@ -58,3 +58,12 @@
         padding: 0px;
     }
 }
+@media screen and (max-width: 500px) {
+    .links {
+        gap: 10px;
+    }
+
+    .navbar {
+        padding: 5% 0;
+    }
+}

@@ -1,0 +1,133 @@
+.discordContainer {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+}
+
+.imagesContainer {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.textContainer {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-family: "Inter", sans-serif;
+    margin-top: 5%;
+    line-height: 37px;
+}
+
+.title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+
+.description {
+    font-size: 22px;
+}
+
+.addButton {
+    background-color: #239b95;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.addButton:hover {
+    background-color: #127772;
+}
+
+@media screen and (max-width: 1800px) {
+    .discordContainer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .title {
+        font-size: 45px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+
+    .discordContainer {
+        width: 100%;
+    }
+
+    .imagesContainer {
+        width: 44%;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .imagesContainer {
+        margin-right: 22px;
+    }
+    .textContainer {
+        margin-left: 22px;
+    }
+    .imagesContainer {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .imagesContainer {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1115px) {
+    .imagesContainer {
+        width: 55%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .discordContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagesContainer {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .textContainer {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .imagesContainer {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .imagesContainer {
+        width: 90%;
+        margin-bottom: 22px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .textContainer {
+        padding-bottom: 20%;
+        align-items: center;
+    }
+}
