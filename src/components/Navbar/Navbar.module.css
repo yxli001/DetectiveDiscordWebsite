@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 5%;
+    padding: 3% 5%;
     font-size: 30px;
 }
 
@@ -26,6 +26,12 @@
     letter-spacing: 0;
 }
 
+.links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 .link {
     color: white;
     text-decoration: none;
@@ -34,4 +40,21 @@
 
 .link:hover {
     color: rgb(182, 182, 182);
+}
+
+@media screen and (max-width: 800px) {
+    .link {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .logoLink {
+        font-size: 26px;
+    }
+    .link {
+        font-size: 18px;
+    }
+    .navbar {
+        padding: 0px;
+    }
 }

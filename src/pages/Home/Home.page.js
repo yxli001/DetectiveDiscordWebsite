@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import styles from "./Home.module.css";
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
+import ContentScanner from "../ContentScanner/ContentScanner.page";
+import Navbar from "../../components/Navbar/Navbar";
 
 const Home = () => {
     const [loading, setLoading] = useState(false);
@@ -28,11 +30,16 @@ const Home = () => {
     return (
         <div className={styles.homeContainer}>
             <div className={styles.mainContainer}>
-                <h1 className={styles.catchPhrase}>
+                <Navbar />
+                <h1
+                    className={`${styles.catchPhrase} animate__animated animate__flipInX`}
+                >
                     Detect Hate Speech in Seconds
                 </h1>
                 <div className={styles.demo}>
-                    <div className={styles.demoLeft}>
+                    <div
+                        className={`${styles.demoLeft} animate__animated animate__fadeInLeft`}
+                    >
                         <h1 className={styles.tryOut}>Try it out!</h1>
                         <textarea
                             type="text"
@@ -48,7 +55,9 @@ const Home = () => {
                             Test
                         </button>
                     </div>
-                    <div className={styles.demoRight}>
+                    <div
+                        className={`${styles.demoRight} animate__animated animate__fadeInRight`}
+                    >
                         <h1 className={styles.resultTitle}>Output:</h1>
                         <div className={styles.codeBackground}>
                             {!loading ? (
@@ -139,6 +148,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <ContentScanner />
         </div>
     );
 };
