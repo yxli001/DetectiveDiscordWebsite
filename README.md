@@ -8,6 +8,7 @@ Our goal for this project was to build a series of projects that would use our A
 - HTML
 - CSS
 - JavaScript
+- Node.js
 - Axios (connecting frontend to backend)
 
 # Screenshots
